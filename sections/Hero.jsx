@@ -1,8 +1,11 @@
 import React from 'react'
 
 const Hero = () => {
+
   return (
-    <div>Herooo</div>
+    <section>
+      <h1>Tapir</h1>
+    </section>
   )
 }
 
