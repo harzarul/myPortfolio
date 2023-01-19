@@ -6,13 +6,17 @@ import { NavLinks } from "../constant";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { navVariants } from "../styles/motion";
 
 const Navbar = () => {
   const [active, setActive] = useState("aboutme");
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='flex justify-between items-center p-6'>
+    <motion.nav className='flex justify-between items-center p-6'
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show">
       <div>
         <img className='w-[7rem] h-auto object-contain'
           src="./logo.png" alt="logo" />
@@ -35,7 +39,7 @@ const Navbar = () => {
         <div onClick={() => setToggle(!toggle)}>
           {toggle ? <AiOutlineCloseSquare className="w-[2.1rem] h-[2.1rem] text-white"/> : <FaBars className="w-[2.1rem] h-[2.1rem] text-white"/>}
         </div>
-        <div className={`${toggle ? "flex" : "hidden"} p-5 mx-4 my-2 min-w-[140px] rounded-full absolute top-20 right-0`}>
+        <div className={`${toggle ? "flex" : "hidden"} p-5 mx-4 my-2 min-w-[140px] rounded-xl absolute top-20 right-0 bg-black`}>
           <ul className='flex flex-col flex-1 justify-end items-start mr-[2rem]'>
             {NavLinks.map((data,index) => (
               <li className={`p-1 my-[.5rem] text-[1.4rem] font-montserrat font-semibold cursor-pointer ${active === data.id ? "text-yellow border-b-2" : "text-white"}`}
@@ -50,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   )
 }
 

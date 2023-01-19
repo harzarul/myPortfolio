@@ -11,7 +11,11 @@ const Page = () => {
           <Navbar/>
         </div>
       </div>
-      <Hero/>
+      <div className="flex justify-center items-center px-[2rem]">
+        <div className={`${styles.boxWidth}`}>
+          <Hero/>
+        </div>
+      </div>
       <Footer/>
     </main>
   )

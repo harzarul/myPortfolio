@@ -17,7 +17,7 @@ module.exports = {
         yellow: "rgba(246, 228, 36, 1)",
         red: "rgba(255, 28, 28, 0.8)",
         dimWhite: "rgba(245, 245, 245, .1)",
-        gray: "rgba(208, 208, 208, .8)",
+        gray: "rgba(208, 208, 208, .5)",
         dimGray: "rgba(208, 208, 208, .4)",
       },
       fontFamily: {

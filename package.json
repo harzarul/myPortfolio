@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@next/font": "13.1.2",
+    "@nivo/core": "^0.80.0",
+    "@nivo/radar": "^0.80.0",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
     "framer-motion": "^8.4.3",

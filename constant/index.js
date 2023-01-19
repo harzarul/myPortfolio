@@ -20,3 +20,49 @@ export const NavLinks = [
     logo: <FaHeadset/>,
   },
 ]
+
+export const HeroDetails = [
+  {
+    id: "name",
+    title: "Name",
+    subtitle: "Zarul",
+  },
+  {
+    id: "nindo",
+    title: "Nindo",
+    subtitle: "UI is like a joke. If you have to explain it, it's not that good.",
+  },
+]
+
+export const RadarData = [
+  {
+    skill: "Negotiation",
+    Engineer: "2",
+    Realtor: "5",
+    Trader: "1",
+  },
+  {
+    skill: "Teamwork",
+    Engineer: "5",
+    Realtor: "2",
+    Trader: "1",
+  },
+  {
+    skill: "Creativity",
+    Engineer: "3",
+    Realtor: "3",
+    Trader: "5",
+  },
+  {
+    skill: "Critical Thinking",
+    Engineer: "3",
+    Realtor: "1",
+    Trader: "5",
+  },
+  {
+    skill: "Motivation",
+    Engineer: "3",
+    Realtor: "1",
+    Trader: "4",
+  },
+]
