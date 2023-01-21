@@ -3,6 +3,16 @@
 import { ResponsiveRadar } from "@nivo/radar";
 import { RadarData as data } from "../constant";
 
+export const theme = {
+  axis: {
+    ticks: {
+      text:{
+        fill: "#ffffcc"
+      }
+    }
+  }
+}
+
 const RadarChart = () => {
   return (
     <ResponsiveRadar
@@ -44,6 +54,7 @@ const RadarChart = () => {
                 ]
             }
         ]}
+        theme={theme}
     />
   )
 }

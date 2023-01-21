@@ -13,9 +13,10 @@ module.exports = {
       colors: {
         white: "rgba(245, 245, 245, .9)",
         black: "rgba(0, 0, 0, .9)",
+        black2: "rgba(0, 0, 0, 1)",
         blue: "rgba(12, 32, 60, 1)",
         yellow: "rgba(246, 228, 36, 1)",
-        red: "rgba(255, 28, 28, 0.8)",
+        red: "rgba(255, 28, 28, 1)",
         dimWhite: "rgba(245, 245, 245, .1)",
         gray: "rgba(208, 208, 208, .5)",
         dimGray: "rgba(208, 208, 208, .4)",

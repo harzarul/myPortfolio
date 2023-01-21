@@ -1,6 +1,6 @@
 
 import { Navbar, Footer } from "../components";
-import { Hero } from "../sections";
+import { Hero, Projects } from "../sections";
 import styles from "../styles";
 
 const Page = () => {
@@ -12,8 +12,10 @@ const Page = () => {
         </div>
       </div>
       <div className="flex justify-center items-center px-[2rem]">
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${styles.boxWidth} relative`}>
           <Hero/>
+          <div className="gradient-03 z-0"/>
+          <Projects/>
         </div>
       </div>
       <Footer/>
