@@ -7,10 +7,11 @@ import { ProjectsData } from '../constant';
 import { ProjectCard } from '../components';
 
 const Projects = () => {
-  const [active, setActive] = useState('restaurant');
+  const [active, setActive] = useState('ebank');
   
   return (
-    <div className='flex flex-col items-center justify-start mb-[10rem]'>
+    <section className='flex flex-col items-center justify-start mb-[10rem]'
+      id='projects'>
       <h1 className='mb-[1.2rem] px-[1rem] text-white border-l-2 border-yellow font-nunito font-semibold md:text-[2rem] text-[1.2rem]'>
         Projects
       </h1>
@@ -24,7 +25,7 @@ const Projects = () => {
             handleClick={setActive}/>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

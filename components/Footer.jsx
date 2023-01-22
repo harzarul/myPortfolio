@@ -3,7 +3,7 @@
 
 import React from 'react'
 import {Contacts} from '../constant';
-import { MapLocation } from "../components";
+import { Map } from "../components";
 import { FaCopyright } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { footerVariants, staggerContainer } from '../styles/motion';
@@ -11,6 +11,7 @@ import { footerVariants, staggerContainer } from '../styles/motion';
 const Footer = () => {
   return (
     <motion.footer className='flex flex-col items-center justify-start'
+      id='contact'
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
@@ -23,8 +24,10 @@ const Footer = () => {
           <motion.div className='flex justify-center items-center ss:mt-[2.5rem] mt-[1rem]'
             variants={footerVariants}>
             {Contacts.map((data,index) => (
-              <a href="" key={data.id}>
-                <h1 className={`md:text-[1.5rem] text-[1.1rem] text-white hover:text-[2rem] ss:px-2 px-1`}>
+              <a href={data.link}
+                key={data.id}
+                target="_blank">
+                <h1 className={`md:text-[1.5rem] text-[1.1rem] text-white hover:text-yellow hover:text-[2rem] ss:px-2 px-1`}>
                   {data.icon}
                 </h1>
               </a>
@@ -35,15 +38,15 @@ const Footer = () => {
 
       <div className='flex justify-start items-center w-[80%] my-[1rem]'>
         <div className='h-[15rem] w-[15rem]'>
-          <MapLocation/>
+          <Map/>
         </div>
       </div>
 
       <div className='flex justify-start items-center pb-[1rem] pt-[1rem] w-[80%]'>
-        <div className='border-t-2 border-yellow w-[40%] flex justify-start items-center'>
-          <FaCopyright className='mr-2 text-white'/>
+        <div className='border-t-2 border-yellow w-[40%] flex justify-start sm:items-center items-start'>
+          <FaCopyright className='mr-2 sm:pt-0 pt-2 text-white'/>
           <h1 className='text-white text-[1rem] font-Nunito font-semibold'>
-            2023 Harzarul, All rights reserved.
+            Design and Inspired by Zarul
           </h1>
         </div>
       </div>

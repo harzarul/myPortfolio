@@ -9,7 +9,8 @@ import { staggerContainer, rollIn } from "../styles/motion";
 const Hero = () => {
 
   return (
-    <section className='flex md:flex-row flex-col justify-between items-center'>
+    <section className='flex md:flex-row flex-col justify-between items-center'
+      id="aboutme">
       <motion.div className='flex items-start justify-start'
         variants={staggerContainer}
         initial="hidden"

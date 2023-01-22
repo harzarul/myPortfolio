@@ -71,23 +71,22 @@ export const Contacts = [
   {
     id: "github",
     icon: <BsGithub/>,
-    link: "",
+    link: "https://github.com/harzarul",
   },
   {
     id: "fb",
     icon: <BsFacebook/>,
-    link: "",
+    link: "https://www.facebook.com/zarul.supalameyo?mibextid=ZbWKwL",
   },
   {
     id: "insta",
     icon: <BsInstagram/>,
-    link: "",
+    link: "https://instagram.com/harzarul?igshid=NTA5ZTk1NTc=",
   },
   {
     id: "twitter",
     icon: <BsTwitter/>,
-    link: "",
-    color: "blue",
+    link: "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D",
   },
 ]
 
@@ -780,17 +779,42 @@ export const MapData = [
 
 export const ProjectsData = [
   {
+    id: 'ebank',
+    imgUrl: "./bg3.jpg",
+    title: 'E-Bank',
+    link: 'https://harzarul.github.io/hoooobank/',
+    ps: 'Figma to React',
+  },
+  {
     id: 'restaurant',
-    imgUrl: "./bg1.jpg",
+    imgUrl: "./bg1.1.jpg",
     title: 'Exclusive Restaurant',
     link: 'https://harzarul.github.io/restaurant/',
     ps: 'Figma to React',
   },
   {
-    id: 'photographer',
-    imgUrl: "./bg2.jpg",
-    title: 'Freelance Photographer',
-    link: 'https://harzarul.github.io/photographer/',
-    ps: 'React-Router-Dom',
+    id: 'crypto',
+    imgUrl: "./bg2.1.jpg",
+    title: 'Crypto Tracker',
+    link: 'https://harzarul.github.io/cryptotracker/',
+    ps: 'Api integration',
+  },
+]
+
+export const FaqData = [
+  {
+    id: "1.1",
+    question: "What do you think about death?",
+    answer: "An event worth to be celebrate by being authentic.",
+  },
+  {
+    id: "1.2",
+    question: "Favourite element?",
+    answer: "Group-14 Period-2",
+  },
+  {
+    id: "1.3",
+    question: "Define yourself using number.",
+    answer: "3.14159",
   },
 ]

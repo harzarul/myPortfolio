@@ -2,7 +2,6 @@
 'use client';
 
 import React from 'react'
-import GoogleMapReact from 'google-map-react';
 import { ResponsiveGeoMap, ResponsiveChoropleth, } from '@nivo/geo';
 import { MapData as data } from "../constant";
 import { geoFeatures } from '../constant/geoData';
@@ -25,7 +24,7 @@ const Map = () => {
         projectionTranslation={[ 0.5, 0.5 ]}
         projectionRotation={[ 260, 0, 0 ]}
         enableGraticule={true}
-        isInteractive={false}
+        isInteractive={true}
         graticuleLineWidth={.5}
         graticuleLineColor="#dddddd"
         borderWidth={0.5}
@@ -73,6 +72,19 @@ const Map = () => {
             },
         ]}
         legends={[]}
+        tooltip={(data, color) => (
+          <div
+            style={{
+              padding: 12,
+              color,
+              background: "#ffffff"
+            }}
+          >
+            <strong>
+              <span>{data.feature.properties.name}</span>
+            </strong>
+          </div>
+        )}
     />
   )
 }

@@ -9,7 +9,7 @@ const ProjectCard = ({id, imgUrl, title, link, index, ps, active, handleClick}) 
             alt={title} />
         
         {active !== id ? (
-            <h3 className="font-semibold font-montserrat sm:text-[26px] text-[18px] text-secondary absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
+            <h3 className="font-semibold text-white font-montserrat sm:text-[26px] text-[18px] text-secondary absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
                 {title}
             </h3>
         ) : (
@@ -18,7 +18,7 @@ const ProjectCard = ({id, imgUrl, title, link, index, ps, active, handleClick}) 
                     {ps}
                 </p>
                 <a href={link} target='_blank'>
-                    <h2 className="mt-[24px] font-semibold font-montserrat sm:text-[32px] text-[24px] text-white hover:text-yellow cursor-pointer">
+                    <h2 className="mt-[24px] font-semibold font-montserrat sm:text-[32px] hover:text-[33px] text-[24px] text-white hover:text-yellow cursor-pointer">
                     {title}
                     </h2>
                 </a>
