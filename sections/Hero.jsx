@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      <div className="flex flex-col justify-center items-center md:h-[50vh] h-[70vh] md:w-[30%] ss:w-[70%] w-[80%] my-[2rem]">
+      <div className="flex flex-col justify-center items-center md:h-[50vh] h-[50vh] md:w-[30%] ss:w-[70%] w-[80%] my-[2rem]">
         <h1 className="text-[1.2rem] text-white font-montserrat font-semibold px-4 md:border-b-2 border-b-0 md:border-l-0 border-l-2 border-yellow">
           Experience
         </h1>
