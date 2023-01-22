@@ -26,7 +26,7 @@ const Footer = () => {
             {Contacts.map((data,index) => (
               <a href={data.link}
                 key={data.id}
-                target="_blank">
+                target="_blank" rel="noreferrer">
                 <h1 className={`md:text-[1.5rem] text-[1.1rem] text-white hover:text-yellow hover:text-[2rem] ss:px-2 px-1`}>
                   {data.icon}
                 </h1>

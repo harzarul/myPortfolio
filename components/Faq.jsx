@@ -25,7 +25,8 @@ const Faq = () => {
 
       <div className='flex flex-col items-center justify-start ss:w-[40rem] w-[23rem]'>
         {FaqData.map((data, index) => (
-          <div className='flex flex-col items-center justify-start w-full mb-1'>
+          <div className='flex flex-col items-center justify-start w-full mb-1'
+            key={data.id}>
             <div className='flex justify-between items-center py-2 px-3 w-full bg-dimWhite'>
               <h1 className='text-[1.3rem] text-white font-nunito font-semibold'>
                 {data.question}

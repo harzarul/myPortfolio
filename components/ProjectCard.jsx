@@ -17,7 +17,9 @@ const ProjectCard = ({id, imgUrl, title, link, index, ps, active, handleClick}) 
                 <p className="font-normal font-nunito text-[16px] leading-[20.16px] text-white uppercase">
                     {ps}
                 </p>
-                <a href={link} target='_blank'>
+                <a href={link}
+                  target='_blank'
+                  rel="noreferrer">
                     <h2 className="mt-[24px] font-semibold font-montserrat sm:text-[32px] hover:text-[33px] text-[24px] text-white hover:text-yellow cursor-pointer">
                     {title}
                     </h2>
